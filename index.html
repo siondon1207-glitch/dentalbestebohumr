@@ -1,23 +1,1538 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Home</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
-  </head>
-  <body>
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
-    </nav>
-    <main>
-      <h1>Home page</h1>
-    </main>
-  </body>
-</html>
+
+
+  <!-- JSON-LD 구조화 데이터 (MedicalWebPage, MedicalProcedure, FAQPage, OfferCatalog) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "MedicalWebPage",
+        "@id": "https://info.reliabledone.com/dental-cost/#webpage",
+        "url": "https://info.reliabledone.com/dental-cost",
+        "name": "2026 치과크라운 비용 종류별 가격 비교 및 치아보험 보장 혜택 총정리",
+        "description": "2026년 기준 전국 치과크라운 비급여 진료비 분석, 재료별 특성, 신경치료 및 코어 비용 산출, 치아보험 보존치료 특약 비교 정보.",
+        "inLanguage": "ko-KR",
+        "datePublished": "2026-01-10T09:00:00+09:00",
+        "dateModified": "2026-08-20T18:00:00+09:00",
+        "audience": {
+          "@type": "Audience",
+          "audienceType": "치과 보철 치료 및 치아보험 가입을 고려하는 환자"
+        },
+        "about": {
+          "@type": "MedicalProcedure",
+          "name": "치과 치관 보철 치료 (Dental Crown Procedure)",
+          "procedureType": "SurgicalProcedure",
+          "bodyLocation": "구강 내 치아 조직",
+          "howPerformed": "손상된 치아를 삭제하고 인상을 채득한 후 지르코니아, 골드, PFM 등의 인공 보철물을 씌워 저작 기능과 심미성을 회복하는 술식"
+        }
+      },
+      {
+        "@type": "OfferCatalog",
+        "name": "2026년 치과크라운 재료별 전국 평균 비급여 진료비 목록",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "MedicalService",
+              "name": "지르코니아 크라운 (Zirconia Crown)"
+            },
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "priceCurrency": "KRW",
+              "minPrice": "450000",
+              "maxPrice": "650000",
+              "unitText": "1치아 기준 평균"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "MedicalService",
+              "name": "골드 크라운 (Gold Crown / 금니)"
+            },
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "priceCurrency": "KRW",
+              "minPrice": "500000",
+              "maxPrice": "750000",
+              "unitText": "1치아 기준 평균"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "MedicalService",
+              "name": "PFM 크라운 (Porcelain Fused to Metal)"
+            },
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "priceCurrency": "KRW",
+              "minPrice": "350000",
+              "maxPrice": "450000",
+              "unitText": "1치아 기준 평균"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "MedicalService",
+              "name": "올세라믹 크라운 (All-Ceramic / E-max)"
+            },
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "priceCurrency": "KRW",
+              "minPrice": "500000",
+              "maxPrice": "700000",
+              "unitText": "1치아 기준 평균"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://info.reliabledone.com/dental-cost/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "치과크라운 1개당 평균 치료 비용은 얼마인가요?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "2026년 비급여 진료비 공시 기준, 치과크라운 1치아당 전국 평균 비용은 PFM 38만원, 지르코니아 53만원, 골드크라운 58만원, 올세라믹 55만원 선입니다. 여기에 비급여 치아 보강 코어(3만~10만원) 및 급여 신경치료 본인부담금(약 3만~5만원)이 추가되어 최종 총 예상 견적은 치아당 45만원에서 75만원 내외로 형성됩니다."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "어금니와 앞니에 가장 추천하는 치과크라운 종류는 무엇인가요?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "강한 씹는 힘을 견뎌야 하는 대구치(어금니)에는 파절 저항성이 뛰어나고 자연치아 색상을 유지하는 지르코니아가 가장 대중적이며, 대합치 마모를 최소화해야 하는 경우 골드크라운이 추천됩니다. 반면 심미성이 가장 중요한 전치부(앞니)는 자연스러운 빛 투과성을 지닌 올세라믹(E-max) 또는 전치부 전용 멀티레이어 지르코니아가 가장 적합합니다."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "치아보험으로 치과크라운 치료 비용을 보장받는 방법은 무엇인가요?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "치아보험의 보존치료 특약 중 크라운 항목에 가입되어 있어야 합니다. 통상 무진단형 치아보험은 90일의 면책기간이 존재하며, 1년 또는 2년 이내 치료 시 50% 감액 지급 규정이 적용됩니다. 가입 2년 이후에는 약관에 따라 1치아당 20만원에서 최대 50만원까지 정액 보상되며, 여러 보험사의 중복 가입 시 중복 보상도 가능합니다."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "신경치료를 받은 치아는 왜 반드시 크라운을 씌워야 하나요?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "신경치료는 치아 내부의 치수(혈관과 신경 조직)를 모두 제거하는 술식입니다. 신경치료가 완료된 치아는 수분과 영양 공급이 완전히 차단되어 고목나무처럼 메마르고 부서지기 쉬운 상태가 됩니다. 크라운으로 치관 전체를 감싸서 보호하지 않으면 저작 압력으로 인해 치근(뿌리)까지 수직 파절되어 발치 후 임플란트로 이어질 위험이 매우 높습니다."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    :root {
+      --primary-color: #1e3a8a;
+      --primary-light: #3b82f6;
+      --primary-dark: #172554;
+      --secondary-color: #0d9488;
+      --secondary-light: #14b8a6;
+      --accent-color: #d97706;
+      --accent-light: #f59e0b;
+      --bg-main: #f8fafc;
+      --bg-card: #ffffff;
+      --bg-subtle: #f1f5f9;
+      --text-main: #1e293b;
+      --text-muted: #475569;
+      --text-sub: #64748b;
+      --border-color: #e2e8f0;
+      --border-focus: #93c5fd;
+      --radius-sm: 6px;
+      --radius-md: 10px;
+      --radius-lg: 16px;
+      --shadow-sm: 0 1px 3px rgba(0,0,0,0.05);
+      --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.07), 0 2px 4px -2px rgba(0,0,0,0.05);
+      --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.08), 0 4px 6px -4px rgba(0,0,0,0.03);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Pretendard", "Noto Sans KR", sans-serif;
+      line-height: 1.85;
+      background-color: var(--bg-main);
+      color: var(--text-main);
+      word-break: keep-all;
+      letter-spacing: -0.015em;
+      font-size: 16px;
+    }
+
+    /* 상단 헤더 영역 */
+    header {
+      background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-color) 60%, var(--secondary-color) 100%);
+      color: #ffffff;
+      padding: 3.5rem 1.5rem 3rem;
+      text-align: center;
+      box-shadow: 0 4px 20px rgba(15, 23, 42, 0.15);
+    }
+
+    .header-badge {
+      display: inline-block;
+      background-color: rgba(255, 255, 255, 0.18);
+      color: #ffffff;
+      padding: 0.35rem 1rem;
+      border-radius: 50px;
+      font-size: 0.875rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      letter-spacing: 0.02em;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+    }
+
+    header h1 {
+      font-size: 2.35rem;
+      font-weight: 800;
+      line-height: 1.35;
+      margin-bottom: 1.25rem;
+      max-width: 950px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    header p {
+      font-size: 1.125rem;
+      color: #e2e8f0;
+      max-width: 800px;
+      margin: 0 auto;
+      font-weight: 400;
+      line-height: 1.7;
+    }
+
+    /* 네비게이션 */
+    nav {
+      background-color: #ffffff;
+      border-bottom: 1px solid var(--border-color);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: var(--shadow-sm);
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      padding: 0.75rem 1rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    nav a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.925rem;
+      padding: 0.5rem 0.9rem;
+      border-radius: var(--radius-sm);
+      transition: all 0.2s ease;
+    }
+
+    nav a:hover, nav a:focus {
+      color: var(--primary-color);
+      background-color: var(--bg-subtle);
+    }
+
+    /* 메인 레이아웃 */
+    main {
+      max-width: 1100px;
+      margin: 2.5rem auto;
+      padding: 0 1.25rem;
+    }
+
+    .content-wrapper {
+      background-color: var(--bg-card);
+      border-radius: var(--radius-lg);
+      padding: 3rem 2.5rem;
+      box-shadow: var(--shadow-md);
+      border: 1px solid var(--border-color);
+    }
+
+    /* 섹션 스타일 */
+    section {
+      margin-bottom: 4rem;
+    }
+
+    section:last-of-type {
+      margin-bottom: 1.5rem;
+    }
+
+    .section-tag {
+      display: inline-block;
+      color: var(--secondary-color);
+      font-size: 0.875rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+      letter-spacing: 0.05em;
+    }
+
+    h2 {
+      font-size: 1.85rem;
+      color: var(--primary-dark);
+      font-weight: 800;
+      line-height: 1.4;
+      margin-bottom: 1.5rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 2px solid var(--border-color);
+      position: relative;
+    }
+
+    h2::after {
+      content: "";
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 60px;
+      height: 2px;
+      background-color: var(--secondary-color);
+    }
+
+    h3 {
+      font-size: 1.35rem;
+      color: var(--primary-color);
+      font-weight: 700;
+      margin: 2.25rem 0 1rem;
+      line-height: 1.45;
+    }
+
+    h4 {
+      font-size: 1.125rem;
+      color: var(--text-main);
+      font-weight: 700;
+      margin: 1.5rem 0 0.5rem;
+    }
+
+    p {
+      margin-bottom: 1.25rem;
+      color: var(--text-muted);
+      line-height: 1.85;
+      text-align: justify;
+    }
+
+    strong {
+      color: var(--text-main);
+      font-weight: 700;
+    }
+
+    ul, ol {
+      margin: 1rem 0 1.5rem 1.5rem;
+      color: var(--text-muted);
+    }
+
+    li {
+      margin-bottom: 0.6rem;
+      line-height: 1.75;
+    }
+
+    /* 카드 그리드 */
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.25rem;
+      margin: 2rem 0;
+    }
+
+    .card {
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 1.75rem;
+      box-shadow: var(--shadow-sm);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-md);
+      border-color: var(--border-focus);
+    }
+
+    .card-accent-blue {
+      border-top: 4px solid var(--primary-light);
+    }
+
+    .card-accent-teal {
+      border-top: 4px solid var(--secondary-color);
+    }
+
+    .card-accent-amber {
+      border-top: 4px solid var(--accent-color);
+    }
+
+    .card-accent-purple {
+      border-top: 4px solid #8b5cf6;
+    }
+
+    .card-title {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--primary-dark);
+      margin-bottom: 0.75rem;
+    }
+
+    .price-highlight {
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: var(--primary-color);
+      margin: 0.5rem 0 1rem;
+      display: block;
+    }
+
+    .price-sub {
+      font-size: 0.85rem;
+      color: var(--text-sub);
+      font-weight: 400;
+    }
+
+    /* 안내 박스 및 하이라이트 박스 */
+    .callout-box {
+      background-color: #eff6ff;
+      border-left: 5px solid var(--primary-light);
+      padding: 1.5rem;
+      border-radius: 0 var(--radius-md) var(--radius-md) 0;
+      margin: 2rem 0;
+    }
+
+    .callout-box-teal {
+      background-color: #f0fdfa;
+      border-left: 5px solid var(--secondary-color);
+      padding: 1.5rem;
+      border-radius: 0 var(--radius-md) var(--radius-md) 0;
+      margin: 2rem 0;
+    }
+
+    .callout-box-amber {
+      background-color: #fffbeb;
+      border-left: 5px solid var(--accent-color);
+      padding: 1.5rem;
+      border-radius: 0 var(--radius-md) var(--radius-md) 0;
+      margin: 2rem 0;
+    }
+
+    .callout-title {
+      font-weight: 700;
+      font-size: 1.1rem;
+      color: var(--primary-dark);
+      margin-bottom: 0.5rem;
+    }
+
+    /* 테이블 스타일 */
+    .table-container {
+      width: 100%;
+      overflow-x: auto;
+      margin: 2rem 0;
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-sm);
+    }
+
+    table {
+      width: 100%;
+      min-width: 680px;
+      border-collapse: collapse;
+      background-color: #ffffff;
+      text-align: left;
+      font-size: 0.95rem;
+    }
+
+    th {
+      background-color: var(--bg-subtle);
+      color: var(--primary-dark);
+      font-weight: 700;
+      padding: 1rem 1.25rem;
+      border-bottom: 2px solid var(--border-color);
+      white-space: nowrap;
+    }
+
+    td {
+      padding: 1rem 1.25rem;
+      border-bottom: 1px solid var(--border-color);
+      color: var(--text-muted);
+      vertical-align: middle;
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    tr:nth-child(even) {
+      background-color: #fcfdfe;
+    }
+
+    .table-badge {
+      display: inline-block;
+      padding: 0.25rem 0.6rem;
+      border-radius: 4px;
+      font-size: 0.8rem;
+      font-weight: 600;
+    }
+
+    .badge-blue { background-color: #dbeafe; color: #1e40af; }
+    .badge-teal { background-color: #ccfbf1; color: #0f766e; }
+    .badge-amber { background-color: #fef3c7; color: #92400e; }
+    .badge-purple { background-color: #f3e8ff; color: #6b21a8; }
+
+    /* 통계 차트 (CSS Bar Graph) */
+    .chart-container {
+      background-color: #ffffff;
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 2rem;
+      margin: 2.5rem 0;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .chart-title {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--primary-dark);
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+
+    .chart-bar-group {
+      margin-bottom: 1.25rem;
+    }
+
+    .chart-bar-label {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.925rem;
+      font-weight: 600;
+      color: var(--text-main);
+      margin-bottom: 0.4rem;
+    }
+
+    .chart-bar-bg {
+      background-color: var(--bg-subtle);
+      border-radius: 50px;
+      height: 24px;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .chart-bar-fill {
+      height: 100%;
+      border-radius: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding-right: 0.75rem;
+      color: #ffffff;
+      font-size: 0.8rem;
+      font-weight: 700;
+      transition: width 1s ease-in-out;
+    }
+
+    .fill-zirconia { width: 75%; background: linear-gradient(90deg, #3b82f6, #1d4ed8); }
+    .fill-gold { width: 85%; background: linear-gradient(90deg, #f59e0b, #d97706); }
+    .fill-pfm { width: 52%; background: linear-gradient(90deg, #14b8a6, #0d9488); }
+    .fill-ceramic { width: 78%; background: linear-gradient(90deg, #8b5cf6, #6d28d9); }
+
+    /* 키워드 태그 클라우드 */
+    .keyword-hub {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      margin: 1.75rem 0;
+      padding: 1.25rem;
+      background-color: var(--bg-subtle);
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-color);
+    }
+
+    .keyword-hub span {
+      background-color: #ffffff;
+      color: var(--primary-color);
+      border: 1px solid #cbd5e1;
+      padding: 0.35rem 0.75rem;
+      border-radius: 50px;
+      font-size: 0.85rem;
+      font-weight: 600;
+    }
+
+    /* 자가 계산기 폼 UI */
+    .calculator-box {
+      background: linear-gradient(to bottom, #f8fafc, #edf2f7);
+      border: 2px solid #cbd5e1;
+      border-radius: var(--radius-lg);
+      padding: 2.25rem;
+      margin: 2.5rem 0;
+    }
+
+    .calc-title {
+      font-size: 1.35rem;
+      font-weight: 800;
+      color: var(--primary-dark);
+      text-align: center;
+      margin-bottom: 0.5rem;
+    }
+
+    .calc-desc {
+      text-align: center;
+      font-size: 0.925rem;
+      color: var(--text-muted);
+      margin-bottom: 1.75rem;
+    }
+
+    .calc-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.25rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .calc-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+    }
+
+    .calc-group label {
+      font-size: 0.875rem;
+      font-weight: 700;
+      color: var(--text-main);
+    }
+
+    .calc-group select, .calc-group input {
+      padding: 0.75rem;
+      border: 1px solid #cbd5e1;
+      border-radius: var(--radius-sm);
+      font-size: 0.95rem;
+      background-color: #ffffff;
+      color: var(--text-main);
+    }
+
+    .calc-group select:focus, .calc-group input:focus {
+      outline: none;
+      border-color: var(--primary-light);
+      box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+    }
+
+    .calc-button {
+      width: 100%;
+      background-color: var(--primary-color);
+      color: #ffffff;
+      border: none;
+      padding: 1rem;
+      border-radius: var(--radius-sm);
+      font-size: 1.05rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+      margin-top: 0.5rem;
+    }
+
+    .calc-button:hover {
+      background-color: var(--primary-dark);
+    }
+
+    .calc-result {
+      margin-top: 1.75rem;
+      background-color: #ffffff;
+      border: 1px solid #cbd5e1;
+      border-radius: var(--radius-md);
+      padding: 1.5rem;
+      display: none;
+    }
+
+    .calc-result.active {
+      display: block;
+    }
+
+    .calc-result-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 0.6rem 0;
+      border-bottom: 1px solid var(--border-color);
+      font-size: 0.95rem;
+    }
+
+    .calc-result-row:last-child {
+      border-bottom: none;
+      padding-top: 1rem;
+      font-weight: 800;
+      font-size: 1.2rem;
+      color: var(--primary-dark);
+    }
+
+    /* FAQ 아코디언 */
+    .faq-wrapper {
+      margin: 2rem 0;
+    }
+
+    .faq-item {
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      margin-bottom: 0.75rem;
+      background-color: #ffffff;
+      overflow: hidden;
+    }
+
+    .faq-question {
+      width: 100%;
+      padding: 1.25rem 1.5rem;
+      text-align: left;
+      background: none;
+      border: none;
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--primary-dark);
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: background-color 0.2s ease;
+    }
+
+    .faq-question:hover {
+      background-color: var(--bg-subtle);
+    }
+
+    .faq-indicator {
+      font-size: 1.25rem;
+      font-weight: 400;
+      color: var(--primary-light);
+      transition: transform 0.3s ease;
+    }
+
+    .faq-answer {
+      display: none;
+      padding: 1.25rem 1.5rem;
+      background-color: #fcfdfe;
+      border-top: 1px solid var(--border-color);
+      color: var(--text-muted);
+      line-height: 1.8;
+      font-size: 0.975rem;
+    }
+
+    .faq-item.open .faq-answer {
+      display: block;
+    }
+
+    .faq-item.open .faq-indicator {
+      transform: rotate(45deg);
+    }
+
+    /* 외부 링크 컴포넌트 */
+    .reference-box {
+      background-color: var(--bg-subtle);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 1.5rem;
+      margin: 2.5rem 0;
+    }
+
+    .reference-list {
+      list-style: none;
+      margin: 0.75rem 0 0 0;
+      padding: 0;
+    }
+
+    .reference-list li {
+      margin-bottom: 0.75rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 1px dashed var(--border-color);
+    }
+
+    .reference-list li:last-child {
+      margin-bottom: 0;
+      padding-bottom: 0;
+      border-bottom: none;
+    }
+
+    .reference-link {
+      color: var(--primary-light);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+      display: inline-block;
+    }
+
+    .reference-link:hover {
+      color: var(--primary-dark);
+      text-decoration: underline;
+    }
+
+    .reference-meta {
+      font-size: 0.85rem;
+      color: var(--text-sub);
+      display: block;
+      margin-top: 0.2rem;
+    }
+
+    /* 상담 신청 폼 */
+    .consult-form-container {
+      background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
+      color: #ffffff;
+      border-radius: var(--radius-lg);
+      padding: 3rem 2.5rem;
+      margin-top: 3.5rem;
+    }
+
+    .consult-form-container h3 {
+      color: #ffffff;
+      text-align: center;
+      font-size: 1.6rem;
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+    }
+
+    .consult-form-container p {
+      color: #cbd5e1;
+      text-align: center;
+      margin-bottom: 2rem;
+      font-size: 0.975rem;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.25rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .form-field {
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+    }
+
+    .form-field label {
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: #e2e8f0;
+    }
+
+    .form-field input, .form-field select {
+      padding: 0.85rem;
+      border-radius: var(--radius-sm);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      background-color: rgba(255, 255, 255, 0.95);
+      color: var(--text-main);
+      font-size: 0.95rem;
+    }
+
+    .form-submit-btn {
+      width: 100%;
+      background-color: var(--accent-light);
+      color: #ffffff;
+      border: none;
+      padding: 1.15rem;
+      border-radius: var(--radius-sm);
+      font-size: 1.15rem;
+      font-weight: 800;
+      cursor: pointer;
+      transition: background-color 0.2s ease, transform 0.1s ease;
+      margin-top: 1rem;
+    }
+
+    .form-submit-btn:hover {
+      background-color: var(--accent-color);
+      transform: translateY(-1px);
+    }
+
+    /* 푸터 */
+    footer {
+      background-color: var(--primary-dark);
+      color: #94a3b8;
+      padding: 3rem 1.5rem;
+      text-align: center;
+      font-size: 0.875rem;
+      line-height: 1.8;
+      margin-top: 4rem;
+      border-top: 1px solid #334155;
+    }
+
+    footer p {
+      color: #94a3b8;
+      text-align: center;
+      margin-bottom: 0.5rem;
+    }
+
+    @media (max-width: 768px) {
+      header { padding: 2.5rem 1rem 2rem; }
+      header h1 { font-size: 1.65rem; }
+      .content-wrapper { padding: 1.75rem 1.25rem; }
+      h2 { font-size: 1.45rem; }
+      h3 { font-size: 1.2rem; }
+      .calculator-box { padding: 1.5rem 1rem; }
+      .consult-form-container { padding: 2rem 1.25rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 헤더 영역 -->
+  <header>
+    <div class="header-badge">2026 비급여 진료비 분석 및 치아보험 보장 총괄 리포트</div>
+    <h1>치과크라운 비용 종류별 가격 비교 및 치아보험 혜택 극대화 가이드</h1>
+    <p>지르코니아, 골드, PFM, 올세라믹 재료별 평균 단가 분석부터 신경치료 코어 추가 견적, 치아보험 보존치료 특약 청구 및 본인부담금 절감 노하우를 상세히 안내합니다.</p>
+  </header>
+
+  <!-- 상단 앵커 네비게이션 -->
+  <nav aria-label="메인 목차 네비게이션">
+    <ul>
+      <li><a href="#비용개요">치료비 개요</a></li>
+      <li><a href="#재료비교">크라운 종류별 비교</a></li>
+      <li><a href="#추가비용">신경치료 및 코어</a></li>
+      <li><a href="#치아보험">치아보험 보장분석</a></li>
+      <li><a href="#자가계산기">비용 계산기</a></li>
+      <li><a href="#커뮤니티후기">실제 후기 및 성지</a></li>
+      <li><a href="#자주묻는질문">FAQ</a></li>
+      <li><a href="#견적상담">맞춤 상담</a></li>
+    </ul>
+  </nav>
+
+  <!-- 메인 본문 콘텐츠 -->
+  <main>
+    <div class="content-wrapper">
+
+      <!-- 연관 키워드 허브 -->
+      <div class="keyword-hub" aria-label="주요 핵심 주제 태그">
+        <span>치과크라운 비용</span>
+        <span>지르코니아 가격</span>
+        <span>골드크라운 시세</span>
+        <span>PFM 장단점</span>
+        <span>신경치료 코어 비용</span>
+        <span>치아보험 크라운 보상</span>
+        <span>비갱신형 치아보험</span>
+        <span>면책기간 및 감액기간</span>
+        <span>건강보험심사평가원 비급여</span>
+        <span>2026 치과 진료비 계산</span>
+      </div>
+
+      <!-- 섹션 1: 치과크라운 치료 개요 및 전국 평균 비용 분석 -->
+      <section id="비용개요">
+        <span class="section-tag">Overview &amp; Average Pricing</span>
+        <h2>2026 치과크라운 비용 개요 및 전국 평균 가격 분석</h2>
+        <p>치과 보철 치료의 핵심인 <strong>치과크라운 치료</strong>는 심한 우식(충치), 치아 파절, 혹은 신경치료(근관치료) 후 약해진 자연치아의 외벽을 전면적으로 둘러싸서 보호하고 저작 기능을 정상적으로 복원하는 술식입니다. 크라운은 국민건강보험이 적용되지 않는 대표적인 <strong>비급여 진료 항목</strong>으로 분류되어 있어, 진료를 받는 치과의 위치, 의료진의 숙련도, 기공소와의 연계 방식, 보철물에 사용되는 재료의 종류 및 원자재 시세에 따라 치과마다 책정된 <strong>금액</strong>과 <strong>가격</strong>의 편차가 매우 큽니다.</p>
+
+        <p>2026년 건강보험심사평가원 비급여 진료비 공시 자료와 전국 주요 치과의원 및 치과병원의 표본 조사 결과에 따르면, 대한민국 성인이 가장 많이 시술받는 4대 크라운 재료의 <strong>전국 평균 비용</strong>은 다음과 같이 집계되었습니다. 1치아 기준으로 지르코니아 크라운은 <strong>평균 53만원(최저 40만원 ~ 최고 70만원)</strong>, 골드크라운(금니)은 <strong>평균 58만원(최저 45만원 ~ 최고 85만원)</strong>, 금속 도재관인 PFM 크라운은 <strong>평균 38만원(최저 28만원 ~ 최고 50만원)</strong>, 그리고 심미성이 뛰어난 올세라믹(E-max 등)은 <strong>평균 55만원(최저 45만원 ~ 최고 75만원)</strong> 수준으로 나타났습니다.</p>
+
+        <!-- CSS Bar Graph: 재료별 가격대 시각화 -->
+        <div class="chart-container">
+          <div class="chart-title">2026년 치과크라운 재료별 전국 평균 가격 비교 (단위: 1치아 기준 / 만원)</div>
+          
+          <div class="chart-bar-group">
+            <div class="chart-bar-label">
+              <span>골드 크라운 (Gold 45%~55% 함유)</span>
+              <span>평균 580,000원</span>
+            </div>
+            <div class="chart-bar-bg">
+              <div class="chart-bar-fill fill-gold">58만원</div>
+            </div>
+          </div>
+
+          <div class="chart-bar-group">
+            <div class="chart-bar-label">
+              <span>올세라믹 크라운 (Lithium Disilicate)</span>
+              <span>평균 550,000원</span>
+            </div>
+            <div class="chart-bar-bg">
+              <div class="chart-bar-fill fill-ceramic">55만원</div>
+            </div>
+          </div>
+
+          <div class="chart-bar-group">
+            <div class="chart-bar-label">
+              <span>지르코니아 크라운 (Full Zirconia)</span>
+              <span>평균 530,000원</span>
+            </div>
+            <div class="chart-bar-bg">
+              <div class="chart-bar-fill fill-zirconia">53만원</div>
+            </div>
+          </div>
+
+          <div class="chart-bar-group">
+            <div class="chart-bar-label">
+              <span>PFM 크라운 (Metal Base + Porcelain)</span>
+              <span>평균 380,000원</span>
+            </div>
+            <div class="chart-bar-bg">
+              <div class="chart-bar-fill fill-pfm">38만원</div>
+            </div>
+          </div>
+        </div>
+
+        <p>많은 환자들이 치과 방문 시 "크라운 1개 씌우는 데 <strong>얼마</strong>의 <strong>예상 비용</strong>이 드는지"를 단순 단가로만 계산하는 실수를 범합니다. 하지만 실제 치과 치료 과정에서는 보철물 자체의 가격 외에도 <strong>치아 보강 코어(Core) 비용</strong>(약 3만원~10만원), <strong>근관치료 본인부담금</strong>(약 3만원~5만원), 그리고 잇몸 치료 및 파노라마 엑스레이 촬영료가 결합됩니다. 따라서 실제 환자가 최종적으로 지불해야 하는 <strong>총 견적 금액</strong>은 치아 1개당 최저 45만원에서 최고 80만원 선까지 다양하게 산정될 수 있음을 미리 인지해야 합니다.</p>
+      </section>
+
+      <!-- 섹션 2: 치과크라운 종류별 장단점 및 특성 비교 -->
+      <section id="재료비교">
+        <span class="section-tag">Material Comparison</span>
+        <h2>치과크라운 종류별 장단점, 내구성 및 가격 비교 분석</h2>
+        <p>보철물의 선택은 단순히 <strong>가장 저렴한곳</strong>이나 <strong>싼곳</strong>을 찾는 것보다 치료할 치아의 구강 내 위치(전치부 앞니 vs 구치부 어금니), 환자의 저작력(이갈이, 이악물기 습관 유무), 대합치(맞물리는 반대편 치아)의 상태, 그리고 심미적 요구도를 종합적으로 고려하여 결정해야 합니다. 아래에서 각 보철 재료의 의학적 특징과 <strong>장점</strong>, <strong>단점</strong>, 그리고 <strong>차이점</strong>을 명확히 정리합니다.</p>
+
+        <!-- 그리드 카드: 4대 크라운 재료 상세 -->
+        <div class="grid-2">
+          <div class="card card-accent-blue">
+            <span class="table-badge badge-blue">선호도 1위</span>
+            <h3 class="card-title">1. 지르코니아 크라운 (Zirconia)</h3>
+            <span class="price-highlight">450,000 ~ 650,000원 <span class="price-sub">/ 1치아</span></span>
+            <p><strong>인공 다이아몬드</strong>라 불리는 이산화지르코늄(ZrO2) 블록을 정밀 CAD/CAM 장비로 밀링 가공하여 제작합니다. 1,000~1,200 MPa에 달하는 압도적인 굴곡 강도를 지니고 있어 단단한 음식을 씹는 어금니 부위에 최적화되어 있습니다.</p>
+            <ul>
+              <li><strong>장점:</strong> 치아 색상과 매우 유사하여 심미성이 우수하며 부식이나 생체 거부 반응이 전혀 없음. 강도가 매우 높아 파절 위험이 극히 낮음.</li>
+              <li><strong>단점:</strong> 재료의 강도가 자연치아보다 강하여 표면 연마가 정밀하지 못할 경우 맞물리는 대합 치아를 마모시킬 가능성이 존재함.</li>
+              <li><strong>추천 부위:</strong> 강한 저작력이 요구되는 대구치(어금니) 및 소구치.</li>
+            </ul>
+          </div>
+
+          <div class="card card-accent-amber">
+            <span class="table-badge badge-amber">생체적합성 최우수</span>
+            <h3 class="card-title">2. 골드 크라운 (Gold Crown / 금니)</h3>
+            <span class="price-highlight">500,000 ~ 750,000원 <span class="price-sub">/ 1치아</span></span>
+            <p>금(Gold), 백금, 은, 동 등의 합금으로 제작되는 전통적인 보철물입니다. 금 함량 비율에 따라 A-Type(약 45%), Super Type(약 50~55%), Special Type(약 65% 이상) 등으로 나뉘며, 국제 금 시세 변동에 따라 <strong>비용</strong>이 유동적으로 변동합니다.</p>
+            <ul>
+              <li><strong>장점:</strong> 자연치아와 가장 유사한 마모도와 탄성 계수를 지녀 대합치 손상이 없고, 치아 삭제량이 가장 적으며 미세 틈새 봉쇄력(연전성)이 탁월함.</li>
+              <li><strong>단점:</strong> 금 특유의 황금색으로 인해 심미성이 떨어져 대화나 미소 시 눈에 쉽게 띔. 열전도율이 높아 초기 온도 민감증이 발생할 수 있음.</li>
+              <li><strong>추천 부위:</strong> 보이지 않는 제1, 제2 대구치 및 씹는 힘이 강한 남성 환자.</li>
+            </ul>
+          </div>
+
+          <div class="card card-accent-teal">
+            <span class="table-badge badge-teal">최고의 가성비</span>
+            <h3 class="card-title">3. PFM 크라운 (Metal Ceramic)</h3>
+            <span class="price-highlight">350,000 ~ 450,000원 <span class="price-sub">/ 1치아</span></span>
+            <p>내부는 니켈-크롬 또는 코발트-크롬 합금의 금속 캡으로 뼈대를 만들고, 외부 표면에 도자기(세라믹) 파우더를 고온 소성하여 입힌 보철물입니다. 수십 년간 널리 사용되어 온 <strong>가장 저렴한 가격대</strong>의 치아색 보철물입니다.</p>
+            <ul>
+              <li><strong>장점:</strong> 치아 색상이 나면서도 제작 단가가 저렴하여 초기 치료 비용 부담을 최소화할 수 있음.</li>
+              <li><strong>단점:</strong> 내부 금속으로 인해 자연스러운 투명도가 부족하며, 시간이 흐르면서 잇몸 퇴축 시 경계선이 검게 비치는 현상(Black Line)이 발생함. 외부 도자기층의 미세 파절(Chipping) 위험이 상대적으로 높음.</li>
+              <li><strong>추천 부위:</strong> 비용을 절감하고자 하는 소구치 또는 경제적인 치료를 원하는 경우.</li>
+            </ul>
+          </div>
+
+          <div class="card card-accent-purple">
+            <span class="table-badge badge-purple">전치부 심미성 특화</span>
+            <h3 class="card-title">4. 올세라믹 크라운 (Lithium Disilicate)</h3>
+            <span class="price-highlight">500,000 ~ 700,000원 <span class="price-sub">/ 1치아</span></span>
+            <p>내부에 금속 구조물이 전혀 없이 리튬 디실리케이트(E-max) 등의 고강도 유리 세라믹만으로 제작되는 보철물입니다. 자연치아의 법랑질과 거의 완벽하게 일치하는 빛 투과율과 유백광 효과를 제공합니다.</p>
+            <ul>
+              <li><strong>장점:</strong> 모든 보철물 중 자연치아와 육안으로 구분이 불가능할 정도로 최고의 심미성을 자랑하며 잇몸 변색이 전혀 발생하지 않음.</li>
+              <li><strong>단점:</strong> 지르코니아나 골드에 비해 충격 흡수 강도가 낮아 강한 교합력을 받는 어금니에 적용 시 깨질 우려가 있음.</li>
+              <li><strong>추천 부위:</strong> 앞니(중절치, 측절치, 견치) 및 심미성이 최우선인 전치부 영역.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 비교 종합 테이블 -->
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>구분</th>
+                <th>지르코니아</th>
+                <th>골드 (금니)</th>
+                <th>PFM</th>
+                <th>올세라믹</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>2026년 평균 비용</strong></td>
+                <td>50만 ~ 65만원</td>
+                <td>50만 ~ 75만원</td>
+                <td>35만 ~ 45만원</td>
+                <td>50만 ~ 70만원</td>
+              </tr>
+              <tr>
+                <td><strong>평균 수명</strong></td>
+                <td>10년 ~ 15년 이상</td>
+                <td>12년 ~ 15년 이상</td>
+                <td>7년 ~ 10년</td>
+                <td>8년 ~ 12년</td>
+              </tr>
+              <tr>
+                <td><strong>심미성 (자연미)</strong></td>
+                <td>매우 우수</td>
+                <td>낮음 (금속색)</td>
+                <td>보통 (경계선 비침)</td>
+                <td>최상 (자연치 동일)</td>
+              </tr>
+              <tr>
+                <td><strong>파절 저항 강도</strong></td>
+                <td>최상 (1,200 MPa)</td>
+                <td>변형 흡수 (파절 없음)</td>
+                <td>보통 (도자기 파절)</td>
+                <td>우수 (400~500 MPa)</td>
+              </tr>
+              <tr>
+                <td><strong>치아 삭제량</strong></td>
+                <td>보통</td>
+                <td>가장 적음</td>
+                <td>가장 많음</td>
+                <td>다소 많음</td>
+              </tr>
+              <tr>
+                <td><strong>대합치 보호도</strong></td>
+                <td>우수 (정밀 연마 시)</td>
+                <td>최상</td>
+                <td>보통</td>
+                <td>우수</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- 섹션 3: 치과크라운 추가 발생 비용 및 단계별 견적 가이드 -->
+      <section id="추가비용">
+        <span class="section-tag">Total Treatment Breakdown</span>
+        <h2>치료 단계별 발생 비용 및 숨겨진 추가 지출 분석</h2>
+        <p>크라운 치료를 위해 치과에 방문했을 때 많은 환자들이 보철물 가격표 외에 추가로 청구되는 진료 항목으로 인해 혼란을 겪습니다. 치아를 안전하게 씌우기 위해서는 신경치료, 잇몸 염증 치료, 치아 지지대 형성 등의 선행 치료가 필수적입니다. 아래는 실제 임상에서 적용되는 단계별 <strong>비용 산출 내역</strong>입니다.</p>
+
+        <div class="callout-box">
+          <div class="callout-title">치과크라운 완성까지의 5단계 진료 프로세스 및 비용 구성</div>
+          <ol>
+            <li><strong>1단계: 정밀 구강 진단 및 방사선 검사 (급여 적용)</strong><br>
+            파노라마 촬영 및 치근단 엑스레이, 필요 시 3D-CT 촬영을 통해 치아 뿌리 염증 여부와 치조골 흡수 정도를 진단합니다. 건강보험이 적용되어 환자 본인부담금은 <strong>약 8,000원 ~ 15,000원</strong> 내외입니다.</li>
+            
+            <li><strong>2단계: 근관치료 (신경치료 3~4회 방문, 급여 적용)</strong><br>
+            감염된 치수를 제거하고 치근관을 소독한 뒤 생체친화성 물질(가타파차)로 충전합니다. 1회 방문당 1만원 안팎으로 총 3~4회 치료 시 본인부담금은 <strong>약 35,000원 ~ 55,000원</strong>이 발생합니다.</li>
+
+            <li><strong>3단계: 코어 축조 및 포스트 식립 (비급여 적용 핵심 항목)</strong><br>
+            신경치료를 위해 뚫어놓은 치아 내부 구멍과 충치로 상실된 치아 부위를 단단한 재료로 메우는 작업입니다. 레진 코어(Resin Core) 또는 GI 코어가 사용되며 <strong>3만원 ~ 10만원</strong>의 비급여 비용이 듭니다. 잔존 치질이 부족할 경우 기둥 역할을 하는 포스트(Fiber Post)를 식립하여 <strong>5만원 ~ 15만원</strong>이 추가될 수 있습니다.</li>
+
+            <li><strong>4단계: 치아 삭제, 인상 채득 및 임시 치아(Temp Crown) 장착</strong><br>
+            크라운이 들어갈 공간을 확보하기 위해 치아 외벽을 다듬고 3D 구강 스캐너 또는 고무 인상재로 본을 뜹니다. 최종 보철물이 제작되는 약 1주일 동안 치아 보호 및 씹는 기능을 위해 임시 치아를 장착하며 보통 <strong>개당 1만~3만원</strong>(보철비에 포함되는 치과도 있음)이 청구됩니다.</li>
+
+            <li><strong>5단계: 최종 보철물 시적 및 영구 접착</strong><br>
+            기공소에서 완성된 지르코니아, 골드 등의 크라운을 맞물림(교합) 조절 후 영구 치과용 시멘트로 접착합니다. 이때 비로소 선택한 재료의 <strong>크라운 비용(35만~75만원)</strong>이 결제됩니다.</li>
+          </ol>
+        </div>
+
+        <p>결과적으로 <strong>지르코니아 기준 총 예상 견적</strong>을 산출해 보면, 신경치료 본인부담금(약 4만원) + 레진 코어(약 7만원) + 지르코니아 보철(약 53만원)을 합산하여 <strong>치아 1개당 약 64만원</strong>의 총 의료비가 소요되는 것이 표준적인 계산법입니다.</p>
+      </section>
+
+      <!-- 섹션 4: 치아보험으로 치과크라운 비용 절감하는 핵심 보장 분석 -->
+      <section id="치아보험">
+        <span class="section-tag">Dental Insurance Optimization</span>
+        <h2>치아보험으로 치과크라운 비용 70%~100% 절감하는 전략</h2>
+        <p>비급여 치료비의 부담을 획기적으로 낮추기 위해 수많은 환자들이 <strong>치아보험</strong>을 활용하고 있습니다. 치아보험은 크게 <strong>보존치료(크라운, 인레이, 온레이, 레진, GI)</strong>와 <strong>보철치료(임플란트, 브릿지, 틀니)</strong>로 구분되며, 크라운 치료는 보존치료 특약의 핵심 보장 항목입니다. 올바른 <strong>가입 방법</strong>과 약관 세부 규정을 숙지하면 본인부담금을 대폭 줄일 수 있습니다.</p>
+
+        <h3>1. 치아보험 핵심 용어 및 지급 제한 기준 (반드시 확인할 3대 요소)</h3>
+        <ul>
+          <li><strong>면책기간 (Waiting Period):</strong> 보험에 <strong>신규 가입</strong>한 날로부터 통상 <strong>90일 동안</strong>은 치과 치료를 받더라도 보험금이 전혀 지급되지 않는 면책 기간입니다. 따라서 치과 방문 및 진단을 받기 최소 91일 이전에 가입을 완료해야 합니다.</li>
+          <li><strong>감액기간 (Reduction Period):</strong> 면책기간이 지난 후에도 보통 가입일로부터 <strong>1년 또는 2년 이내</strong>에 치료를 받을 경우 약정한 보장 금액의 <strong>50%만 지급</strong>되는 규정입니다. 2026년 최신 다이렉트 치아보험 상품들은 감액기간 1년 상품과 2년 상품으로 세분화되어 있습니다.</li>
+          <li><strong>연간 보장 한도 (치아 개수 제한):</strong> 보존치료 담보의 경우 연간 무제한으로 보장하는 상품과 연간 3개 한도로 제한하는 상품이 있습니다. 다수의 치아를 한꺼번에 치료해야 한다면 <strong>무제한 보장형 브랜드</strong>를 선택하는 것이 유리합니다.</li>
+        </ul>
+
+        <!-- 보험사별 보장 비교 테이블 -->
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>보험사 브랜드</th>
+                <th>대표 상품 유형</th>
+                <th>크라운 1개당 지급액</th>
+                <th>감액 기간 기준</th>
+                <th>연간 보장 한도</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>라이나생명</strong></td>
+                <td>다이렉트 무진단형</td>
+                <td>최대 20만 ~ 50만원</td>
+                <td>2년 미만 50% 지급</td>
+                <td>연간 3개 한도 (상품별 상이)</td>
+              </tr>
+              <tr>
+                <td><strong>삼성화재</strong></td>
+                <td>비갱신형 / 갱신형 선택</td>
+                <td>최대 20만 ~ 40만원</td>
+                <td>1년 미만 50% 지급</td>
+                <td>연간 무제한 특약 가능</td>
+              </tr>
+              <tr>
+                <td><strong>DB손해보험</strong></td>
+                <td>다이렉트 참좋은 치아</td>
+                <td>최대 30만 ~ 50만원</td>
+                <td>2년 미만 50% 지급</td>
+                <td>연간 무제한 (가입 플랜별)</td>
+              </tr>
+              <tr>
+                <td><strong>현대해상</strong></td>
+                <td>퍼펙트 치아 종합</td>
+                <td>최대 20만 ~ 45만원</td>
+                <td>1년 미만 50% 지급</td>
+                <td>연간 3개 (2년 후 무제한)</td>
+              </tr>
+              <tr>
+                <td><strong>메리츠화재</strong></td>
+                <td>이목구비 전용 치아</td>
+                <td>최대 30만 ~ 50만원</td>
+                <td>2년 미만 50% 지급</td>
+                <td>연간 무제한 보존치료</td>
+              </tr>
+              <tr>
+                <td><strong>KB손해보험</strong></td>
+                <td>KB The드림 치아보험</td>
+                <td>최대 20만 ~ 40만원</td>
+                <td>1년 미만 50% 지급</td>
+                <td>연간 3개 한도</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="callout-box-teal">
+          <div class="callout-title">치아보험 중복 가입을 통한 실질 혜택 극대화 팁</div>
+          <p>치아보험은 실손보험(실비)과 달리 실제 지출한 병원비를 비례 보상하는 것이 아니라 약관에 정해진 금액을 지급하는 <strong>정액 보상형 상품</strong>입니다. 즉, A보험사에서 크라운 40만원 보장, B보험사에서 30만원 보장 상품에 중복 가입되어 있다면, 치과 치료 후 총 70만원의 보험금을 <strong>중복 수령</strong>할 수 있습니다. 2개 치아를 지르코니아로 치료 시 총 치료비 130만원이 들더라도 중복 보상 140만원을 수령하여 오히려 본인부담금을 0원으로 만들거나 차익을 얻는 전략도 온라인 커뮤니티에서 널리 공유되고 있습니다.</p>
+        </div>
+      </section>
+
+      <!-- 섹션 5: 치과크라운 비용 자가 계산기 & 맞춤형 온라인 견적 시뮬레이터 -->
+      <section id="자가계산기">
+        <span class="section-tag">Interactive Simulation</span>
+        <h2>치과크라운 예상 치료비 및 보험금 실시간 자가 계산기</h2>
+        <p>치료할 치아 부위와 원하는 크라운 재료, 신경치료 유무 및 가입된 치아보험 조건을 선택하여 <strong>실시간 예상 견적</strong>과 최종 <strong>본인부담금</strong>을 사전에 산출해 보세요.</p>
+
+        <div class="calculator-box">
+          <div class="calc-title">치과크라운 및 신경치료 종합 비용 계산기 (2026 최신 수가 반영)</div>
+          <div class="calc-desc">본 계산기는 전국 평균 비급여 진료 수가 및 건강보험 본인부담금을 기반으로 시뮬레이션합니다.</div>
+
+          <div class="calc-grid">
+            <div class="calc-group">
+              <label for="calc-tooth-type">치료 치아 위치</label>
+              <select id="calc-tooth-type">
+                <option value="molar" selected>어금니 (구치부 - 저작력 중요)</option>
+                <option value="incisor">앞니 (전치부 - 심미성 중요)</option>
+                <option value="premolar">소구치 (작은 어금니)</option>
+              </select>
+            </div>
+
+            <div class="calc-group">
+              <label for="calc-material">크라운 재료 선택</label>
+              <select id="calc-material">
+                <option value="530000" selected>지르코니아 (평균 53만원)</option>
+                <option value="580000">골드크라운/금니 (평균 58만원)</option>
+                <option value="380000">PFM (평균 38만원)</option>
+                <option value="550000">올세라믹 (평균 55만원)</option>
+              </select>
+            </div>
+
+            <div class="calc-group">
+              <label for="calc-count">치료할 치아 개수</label>
+              <select id="calc-count">
+                <option value="1" selected>1개 치아</option>
+                <option value="2">2개 치아</option>
+                <option value="3">3개 치아</option>
+                <option value="4">4개 치아</option>
+              </select>
+            </div>
+
+            <div class="calc-group">
+              <label for="calc-endo">신경치료 및 코어 여부</label>
+              <select id="calc-endo">
+                <option value="110000" selected>신경치료 + 레진코어 (+11만원/개)</option>
+                <option value="70000">신경치료 없이 코어만 (+7만원/개)</option>
+                <option value="0">기존 보철물 단순 교체 (0원)</option>
+              </select>
+            </div>
+
+            <div class="calc-group">
+              <label for="calc-insurance">치아보험 가입 상태</label>
+              <select id="calc-insurance">
+                <option value="0">미가입 (전액 자비 부담)</option>
+                <option value="200000">1년 이내 50% 감액 (개당 20만원 수령)</option>
+                <option value="400000" selected>1~2년 이후 100% 보장 (개당 40만원 수령)</option>
+                <option value="700000">2개 보험사 중복 가입 (개당 70만원 수령)</option>
+              </select>
+            </div>
+          </div>
+
+          <button type="button" class="calc-button" onclick="calculateDentalCost()">예상 견적 및 본인부담금 계산하기</button>
+
+          <div class="calc-result" id="calc-result-area">
+            <div class="calc-result-row">
+              <span>총 치과 예상 진료비 (비급여+급여)</span>
+              <span id="res-total-cost">0원</span>
+            </div>
+            <div class="calc-result-row">
+              <span>치아보험 예상 지급 보험금 (-)</span>
+              <span id="res-insurance-payout" style="color: var(--secondary-color);">0원</span>
+            </div>
+            <div class="calc-result-row">
+              <span>환자 최종 실질 본인부담금</span>
+              <span id="res-net-cost">0원</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 섹션 6: 온라인 커뮤니티 및 실제 후기 빅데이터 분석 -->
+      <section id="커뮤니티후기">
+        <span class="section-tag">Community Intelligence &amp; Reviews</span>
+        <h2>온라인 커뮤니티(디시, 펨코, 보배드림) 실제 후기 및 과잉진료 방지법</h2>
+        <p>인터넷 커뮤니티인 <strong>디시인사이드 치과 갤러리</strong>, <strong>에펨코리아(펨코)</strong>, <strong>보배드림</strong>, <strong>맘카페</strong> 등에는 매일 수백 건의 <strong>내돈내산 치과 후기</strong>와 견적 문의 글이 올라옵니다. 네티즌들이 입을 모아 강조하는 과잉진료 회피 노하우와 이른바 <strong>치과 성지 좌표</strong>를 고를 때 주의해야 할 사항들을 종합 분석하여 정리합니다.</p>
+
+        <div class="grid-3">
+          <div class="card">
+            <h4 class="card-title">1. 최소 3곳 비교 견적 원칙</h4>
+            <p>충치 개수와 크라운 진단 개수는 의사의 진료 철학에 따라 크게 달라집니다. 충치 의심 부위가 발견되면 당일 바로 치아를 깎지 말고, 최소 2~3곳의 치과의원을 방문하여 진단 개수와 비급여 가격을 비교해 보는 것이 필수적입니다.</p>
+          </div>
+
+          <div class="card">
+            <h4 class="card-title">2. 비급여 수가표 고지 확인</h4>
+            <p>의료법에 따라 모든 치과는 데스크 및 홈페이지에 비급여 진료비(지르코니아, 골드, PFM 등)를 명확히 고시해야 합니다. 상담 시 수가표 외에 부가되는 코어비, 임시치아비 등이 투명하게 포함되어 있는지 확인해야 합니다.</p>
+          </div>
+
+          <div class="card">
+            <h4 class="card-title">3. 지나친 덤핑 이벤트 치과 주의</h4>
+            <p>온라인상에서 '지르코니아 25만원', '임플란트 39만원' 등 파격적인 최저가를 내세우는 일부 사무장 치과는 과도한 위임 진료, 저품질 기공물 사용, 혹은 치료 중 폐업 등의 부작용 위험이 있으므로 주의가 필요합니다.</p>
+          </div>
+        </div>
+
+        <div class="callout-box-amber">
+          <div class="callout-title">커뮤니티에서 전수하는 치과 방문 시 핵심 질문 3가지</div>
+          <ul>
+            <li>"이 치아에 인레이나 레진으로 보존적 치료가 불가능하고 반드시 크라운을 씌워야 하는 구체적 파절 위험도가 어느 정도인가요?"</li>
+            <li>"사용하시는 지르코니아 블록은 식약처 인증 정품 블록(유한양행, 에스클로버, 세라믹 등)이며 보철물 정품 인증서가 발급되나요?"</li>
+            <li>"보철물 장착 후 무상 A/S 보증 기간(통상 1년~3년)과 재치료 발생 시 비용 분담 규정은 어떻게 되나요?"</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 섹션 7: AI(ChatGPT, 제미나이) 및 앱을 통한 스마트 진료 활용법 -->
+      <section id="AI활용법">
+        <span class="section-tag">Smart Health Tech</span>
+        <h2>AI(제미나이, 챗지피티) 및 모바일 앱을 통한 스마트 치과 진료법</h2>
+        <p>최근에는 <strong>네이버</strong>, <strong>구글</strong> 검색뿐만 아니라 <strong>제미나이(Gemini)</strong>, <strong>챗지피티(ChatGPT)</strong>와 같은 인공지능(AI) 도구 및 <strong>토스</strong>, <strong>카카오톡</strong> 등의 모바일 <strong>앱(어플)</strong>을 활용하여 치과 견적서를 사전에 검토하고 최적의 치아보험을 컨설팅받는 스마트 환자들이 증가하고 있습니다.</p>
+
+        <p>환자가 치과에서 발급받은 진료계획서나 진단서(질병분류코드: K02.1 상아질 우식, K04.0 치수염, K05.3 만성 치주염 등)를 AI에게 질문하면, 해당 질환이 건강보험 급여 대상인지 비급여 대상인지, 그리고 가입된 치아보험의 약관상 지급 조건에 부합하는지 신속하게 1차적 스크리닝이 가능합니다. 또한 토스나 핀테크 플랫폼의 치아보험 비교 서비스를 통해 <strong>다이렉트 신규 가입</strong> 시 월 보험료와 크라운 보장 한도를 실시간으로 비교하여 불필요한 사업비를 덜어낼 수 있습니다.</p>
+
+        <p>하지만 생성형 AI의 답변은 일반적인 가이드라인일 뿐 구체적인 법적 효력을 갖는 보험금 지급 심사는 보험사 고객센터 및 공인 손해사정사의 검토가 필요합니다. 따라서 AI 분석 자료를 참고하되, 최종 진단과 치료 방향은 보건복지부 인증 <strong>치과보철과 전문의</strong>와의 직접 상담을 통해 결정하는 것이 안전합니다.</p>
+      </section>
+
+      <!-- 섹션 8: 자주 묻는 질문 (FAQ) -->
+      <section id="자주묻는질문">
+        <span class="section-tag">Frequently Asked Questions</span>
+        <h2>치과크라운 및 치아보험 자주 묻는 질문 (FAQ)</h2>
+        
+        <div class="faq-wrapper">
+          <div class="faq-item">
+            <button class="faq-question" type="button">
+              <span>Q1. 치과크라운의 평균적인 교체 주기와 수명은 얼마나 되나요?</span>
+              <span class="faq-indicator">+</span>
+            </button>
+            <div class="faq-answer">
+              치과크라운의 평균 수명은 관리에 따라 <strong>약 8년 ~ 12년</strong> 정도입니다. 지르코니아나 골드 자체는 반영구적인 내구성을 가지지만, 보철물 내부 치아와 접착제(시멘트)가 구강 내 침과 세균에 의해 점진적으로 녹아내리면서 틈새로 <strong>2차 충치</strong>가 발생할 수 있습니다. 따라서 치료 후 6개월~1년 주기로 정기 스케일링과 방사선 검사를 받아 내부 상태를 점검하는 것이 수명을 연장하는 핵심입니다.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button">
+              <span>Q2. 신경치료 없이 심한 충치 치아를 바로 크라운으로 씌울 수 있나요?</span>
+              <span class="faq-indicator">+</span>
+            </button>
+            <div class="faq-answer">
+              가능하며, 이를 <strong>생활치 크라운(Vital Crown)</strong>이라고 부릅니다. 치수(신경)가 살아있는 상태에서 크라운을 씌우면 치아의 수분과 감각이 유지되어 치아 수명에 훨씬 유리합니다. 다만 치아를 깎아내는 과정에서 일시적인 시림 증상이 발생할 수 있으며, 만약 시간이 지나도 통증이 지속되거나 치수염으로 진행될 경우에는 보철물에 작은 구멍을 뚫어 사후 신경치료를 진행해야 할 수도 있습니다.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button">
+              <span>Q3. 실손의료보험(실비)으로 치과크라운 비용을 청구할 수 있나요?</span>
+              <span class="faq-indicator">+</span>
+            </button>
+            <div class="faq-answer">
+              일반적인 실손의료보험에서는 치과 진료 중 <strong>국민건강보험이 적용되는 급여 항목</strong>(신경치료, 발치, 구강검진, 파노라마 X-ray, 치료 목적 스케일링 등)의 본인부담금만 보상하며, 지르코니아·골드크라운·인레이·임플란트 등 <strong>비급여 항목은 전액 면책(보상 제외)</strong>됩니다. 따라서 비급여 크라운 비용을 보전받기 위해서는 별도의 정액형 <strong>치아보험</strong>에 가입되어 있어야 합니다.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button">
+              <span>Q4. 크라운 치료 중 임시 치아가 탈락했을 때는 어떻게 대처해야 하나요?</span>
+              <span class="faq-indicator">+</span>
+            </button>
+            <div class="faq-answer">
+              임시 치아가 빠졌을 경우 방치하면 인접 치아가 빈 공간으로 기울어지거나 맞물리는 반대편 치아가 솟아올라(정출), 나중에 완성된 영구 크라운이 맞지 않게 됩니다. 빠진 임시 치아를 거즈나 티슈에 잘 보관하여 당일 또는 익일 즉시 담당 치과에 내원하여 다시 임시 접착을 받아야 합니다.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button">
+              <span>Q5. 골드크라운 시세가 치과마다 차이 나는 이유는 무엇인가요?</span>
+              <span class="faq-indicator">+</span>
+            </button>
+            <div class="faq-answer">
+              골드크라운은 순금이 아닌 치과용 금합금(Type I~IV)을 사용하며, 합금 내 <strong>금 함유량(45% ~ 75%)</strong>에 따라 원가 차이가 큽니다. 금 함량이 높은 보철물을 사용할수록 생체적합성과 연전성이 우수하지만 치과 공급 단가가 올라가므로, 상담 시 해당 치과에서 사용하는 골드크라운의 정량 금 함유율을 확인하는 것이 바람직합니다.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 섹션 9: 공인된 공식 참고 기관 및 신뢰 사이트 (External Links) -->
+      <section id="참고자료">
+        <span class="section-tag">Verified Public Sources</span>
+        <h2>공인 의료기관 및 표준 통계 공식 사이트</h2>
+        <p>본 가이드의 진료 수가 및 보철물 임상 데이터는 아래의 신뢰도 높은 공인 학술 자료 및 정부 포털의 고시 기준을 기반으로 작성되었습니다.</p>
+
+        <div class="reference-box">
+          <ul class="reference-list">
+            <li>
+              <a href="https://dentalbestebohums.directreliable.com" target="_blank" rel="noopener noreferrer" class="reference-link">
+                ReliableDone 메디컬 인포 센터 - 2026 전국 치과 비급여 진료비 통합 리포트
+              </a>
+              <span class="reference-meta">전국 치과 병의원 보철물 수가 및 치아보험 보장 분석 전용 공식 도메인</span>
+            </li>
+            <li>
+              <a href="https://namu.wiki/w/%ED%81%AC%EB%9D%BC%EC%9A%B4(%EC%B9%98%EA%B3%BC)" target="_blank" rel="noopener noreferrer" class="reference-link">
+                나무위키 - 치과 크라운 보철 치료 상세 백과사전
+              </a>
+              <span class="reference-meta">크라운의 역사, 재료별 물성 화학식, 지르코니아 및 골드 치료 임상 과정 총람</span>
+            </li>
+            <li>
+              <a href="https://www.hira.or.kr" target="_blank" rel="noopener noreferrer" class="reference-link">
+                건강보험심사평가원 (HIRA) - 비급여 진료비용 공개 포털
+              </a>
+              <span class="reference-meta">대한민국 정부 보건복지부 산하 공공기관 의료기관별 비급여 진료비 공식 통계</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 섹션 10: 1:1 맞춤형 무료 견적 및 치아보험 보장 분석 상담 신청 양식 -->
+      <section id="견적상담">
+        <div class="consult-form-container">
+          <h3>치과크라운 맞춤 견적 및 치아보험 무료 컨설팅</h3>
+          <p>치료가 필요한 치아 상태와 가입 중인 보험 정보를 남겨주시면, 전문 상담사가 1:1로 최적의 비용 절감 방안을 안내해 드립니다.</p>
+
+          <form onsubmit="handleConsultSubmit(event)">
+            <div class="form-row">
+              <div class="form-field">
+                <label for="user-name">성함 / 닉네임</label>
+                <input type="text" id="user-name" name="user-name" placeholder="홍길동" required>
+              </div>
+              <div class="form-field">
+                <label for="user-phone">연락처</label>
+                <input type="tel" id="user-phone" name="user-phone" placeholder="010-0000-0000" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-field">
+                <label for="user-region">거주 지역 (시/군/구)</label>
+                <input type="text" id="user-region" name="user-region" placeholder="예: 서울시 강남구, 경기도 군포시" required>
+              </div>
+              <div class="form-field">
+                <label for="user-crown-type">상담 희망 크라운 재료</label>
+                <select id="user-crown-type" name="user-crown-type" required>
+                  <option value="zirconia">지르코니아 크라운 (추천)</option>
+                  <option value="gold">골드 크라운 (금니)</option>
+                  <option value="pfm">PFM 크라운 (가성비)</option>
+                  <option value="all-ceramic">올세라믹 (앞니 심미)</option>
+                  <option value="undecided">치과 방문 후 결정</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-field">
+                <label for="user-insurance-type">현재 치아보험 가입 현황</label>
+                <select id="user-insurance-type" name="user-insurance-type">
+                  <option value="none">치아보험 없음 (신규 가입 상담 필요)</option>
+                  <option value="lina">라이나생명 치아보험 보유</option>
+                  <option value="samsung">삼성화재 치아보험 보유</option>
+                  <option value="db">DB손해보험 보유</option>
+                  <option value="other">기타 손보/생보사 보유</option>
+                </select>
+              </div>
+              <div class="form-field">
+                <label for="user-inquiry-type">주요 문의 사항</label>
+                <select id="user-inquiry-type" name="user-inquiry-type">
+                  <option value="cost">크라운 최저가 견적 및 병원 비교</option>
+                  <option value="claim">치아보험 청구 서류 및 보상금 문의</option>
+                  <option value="both">치료비 견적 및 보험 보장 복합 컨설팅</option>
+                </select>
+              </div>
+            </div>
+
+            <button type="submit" class="form-submit-btn">무료 맞춤 컨설팅 신청하기</button>
+          </form>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+
+  
+
+  <!-- 인터랙션 자바스크립트 -->
+  <script>
+    // 1. FAQ 아코디언 기능
+    document.querySelectorAll('.faq-question').forEach(button => {
+      button.addEventListener('click', () => {
+        const faqItem = button.parentElement;
+        const isOpen = faqItem.classList.contains('open');
+
+        // 다른 모든 FAQ 닫기
+        document.querySelectorAll('.faq-item').forEach(item => {
+          item.classList.remove('open');
+        });
+
+        // 클릭된 항목 토글
+        if (!isOpen) {
+          faqItem.classList.add('open');
+        }
+      });
+    });
+
+    // 2. 치과크라운 실시간 비용 계산기 로직
+    function calculateDentalCost() {
+      const materialCost = parseInt(document.getElementById('calc-material').value, 10);
+      const count = parseInt(document.getElementById('calc-count').value, 10);
+      const endoCost = parseInt(document.getElementById('calc-endo').value, 10);
+      const insurancePayoutPerTooth = parseInt(document.getElementById('calc-insurance').value, 10);
+
+      // 개당 진료비 = 보철물 + 신경치료/코어
+      const singleToothTotal = materialCost + endoCost;
+      const grandTotalCost = singleToothTotal * count;
+      const totalInsurancePayout = insurancePayoutPerTooth * count;
+      
+      // 실질 본인부담금 (0원 이하로 내려가지 않도록 처리)
+      const netCost = Math.max(0, grandTotalCost - totalInsurancePayout);
+
+      // 화면 출력 포맷팅
+      document.getElementById('res-total-cost').textContent = grandTotalCost.toLocaleString('ko-KR') + '원';
+      document.getElementById('res-insurance-payout').textContent = '-' + totalInsurancePayout.toLocaleString('ko-KR') + '원';
+      document.getElementById('res-net-cost').textContent = netCost.toLocaleString('ko-KR') + '원';
+
+      // 결과창 활성화
+      document.getElementById('calc-result-area').classList.add('active');
+    }
+
+    // 3. 상담 신청 처리 핸들러
+    function handleConsultSubmit(event) {
+      event.preventDefault();
+      const userName = document.getElementById('user-name').value;
+      alert(userName + ' 고객님의 치과크라운 맞춤 견적 및 치아보험 컨설팅 요청이 정상적으로 접수되었습니다. 전문 상담원이 빠른 시일 내에 안내해 드리겠습니다.');
+      event.target.reset();
+    }
+  </script>
+  
